@@ -1,18 +1,19 @@
-/* call.css */
 .call-container {
-  padding: 40px;
-  background-color: #f9f9f9;
+  padding: 20px;
+  height: auto;
+  background-color: rgb(229, 205, 209);
   font-family: Arial, sans-serif;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
 .call-container h1 {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .call-form {
@@ -21,24 +22,24 @@
 }
 
 .call-form label {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 14px;
+  margin-bottom: 5px;
   color: #333;
 }
 
 .call-form input,
 .call-form select {
-  font-size: 16px;
-  padding: 10px;
-  margin-bottom: 15px;
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%;
+  width: 90%;
 }
 
 .call-form button {
-  padding: 12px;
-  font-size: 18px;
+  padding: 8px;
+  font-size: 14px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -49,4 +50,119 @@
 
 .call-form button:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 374px) {
+  .call-container {
+    margin-left: 0;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .call-container h1 {
+    font-size: 20px;
+  }
+
+  .call-form label,
+  .call-form input,
+  .call-form select {
+    font-size: 12px;
+  }
+
+  .call-form button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .call-container {
+    margin-left: 0;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .call-container h1 {
+    font-size: 22px;
+  }
+
+  .call-form label,
+  .call-form input,
+  .call-form select {
+    font-size: 14px;
+  }
+
+  .call-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .call-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding: 25px;
+  }
+
+  .call-container h1 {
+    font-size: 24px;
+  }
+
+  .call-form label,
+  .call-form input,
+  .call-form select {
+    font-size: 16px;
+  }
+
+  .call-form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 319px) {
+  .call-container {
+    margin-left: 0;
+    max-width: 280px;
+    padding: 10px;
+  }
+
+  .call-container h1 {
+    font-size: 18px;
+  }
+
+  .call-form label,
+  .call-form input,
+  .call-form select {
+    font-size: 10px;
+  }
+
+  .call-form button {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .call-container {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .call-container h1 {
+    font-size: 26px;
+  }
+
+  .call-form label,
+  .call-form input,
+  .call-form select {
+    font-size: 18px;
+  }
+
+  .call-form button {
+    font-size: 18px;
+    padding: 12px;
+  }
 }

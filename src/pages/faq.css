@@ -1,9 +1,10 @@
-/* faq.css */
+/* Default Styles (Desktop) */
 .faq-container {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial, sans-serif;
+  margin-top: 50px;
 }
 
 .faq-container h1 {
@@ -26,7 +27,7 @@
   font-size: 18px;
   cursor: pointer;
   color: #007bff;
-  background: #f0f8ff; /* Light blue background */
+  background: #f0f8ff;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -34,16 +35,123 @@
 }
 
 .faq-question:hover {
-  background: #e7f3ff; /* Slightly darker blue on hover */
+  background: #e7f3ff;
   color: #0056b3;
 }
 
 .faq-answer {
   font-size: 16px;
   margin-top: 8px;
-  background: #f9f9f9; /* Faint gray background */
+  background: #f9f9f9;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   color: #555;
+}
+
+/* iPhone 5, iPhone SE 2016 (320px to 374px) */
+@media (max-width: 374px) {
+  .faq-container {
+    max-width: 300px; /* Narrower width */
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .faq-container h1 {
+    font-size: 24px; /* Smaller title */
+  }
+
+  .faq-question {
+    font-size: 14px; /* Smaller text */
+    padding: 8px;
+  }
+
+  .faq-answer {
+    font-size: 14px; /* Smaller answer text */
+    padding: 8px;
+  }
+}
+
+/* iPhone X, XR, 11, 12, 13, 14, Galaxy S21 Ultra (375px to 768px) */
+@media (min-width: 375px) and (max-width: 768px) {
+  .faq-container {
+    max-width: 350px;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .faq-container h1 {
+    font-size: 28px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+  }
+}
+
+/* iPad Mini, iPad Air 4, iPad Pro 11 (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .faq-container {
+    max-width: 450px;
+    margin-top: 40px;
+  }
+
+  .faq-container h1 {
+    font-size: 30px;
+  }
+
+  .faq-question {
+    font-size: 18px;
+  }
+
+  .faq-answer {
+    font-size: 16px;
+  }
+}
+
+/* Galaxy Fold2, Microsoft Surface Duo (280px to 319px) */
+@media (max-width: 319px) {
+  .faq-container {
+    max-width: 280px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .faq-container h1 {
+    font-size: 20px;
+  }
+
+  .faq-question {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+/* Large Screens: iPad Pro 11, Galaxy Tab S7 (>1024px) */
+@media (min-width: 1025px) {
+  .faq-container {
+    max-width: 600px;
+    margin-top: 50px;
+  }
+
+  .faq-container h1 {
+    font-size: 36px;
+  }
+
+  .faq-question {
+    font-size: 20px;
+  }
+
+  .faq-answer {
+    font-size: 18px;
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./call.css"; // Import your CSS file
+import "./call.css";
 
 const Call = () => {
   const [formData, setFormData] = useState({
@@ -16,9 +16,8 @@ const Call = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here (e.g., API call, alert, etc.)
     alert("Your request has been submitted!");
-    console.log(formData); // Log form data or send it to an API
+    console.log(formData);
   };
 
   return (

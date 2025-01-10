@@ -1,8 +1,10 @@
+/* Default (Desktop & Laptop) */
 .card-container {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -42,4 +44,92 @@
 
 .card button:hover {
   background-color: #0056b3;
+}
+
+/* Devices: iPhone 11, iPhone XR, Galaxy Z Flip3, Galaxy S21 */
+@media (min-width: 375px) and (max-width: 768px) {
+  .card-container {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 350px;
+    padding: 15px;
+  }
+
+  .card img {
+    height: 130px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card button {
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive for Smaller Phones (320px to 374px) */
+/* Devices: iPhone SE 2016, iPhone 5, Galaxy A12 */
+@media (max-width: 374px) {
+  .card-container {
+    gap: 8px;
+  }
+
+  .card {
+    width: 280px;
+    padding: 12px;
+  }
+
+  .card img {
+    height: 100px;
+  }
+
+  .card h2 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 11px;
+  }
+
+  .card button {
+    padding: 6px 12px;
+  }
+}
+
+/* Ultra-Small Screens and Edge Cases (e.g., Galaxy Fold in portrait mode) */
+/* Devices: Galaxy Fold, Huawei Mate X */
+@media (max-width: 280px) {
+  .card-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .card img {
+    height: 80px;
+  }
+
+  .card h2 {
+    font-size: 12px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+
+  .card button {
+    padding: 5px 10px;
+  }
 }

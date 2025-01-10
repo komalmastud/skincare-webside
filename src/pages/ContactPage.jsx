@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contactUs.css"; // Import your CSS file
+import "./contactUs.css";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -16,9 +16,8 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can handle the form submission
     alert("Form Submitted!");
-    console.log(formData); // Log form data or send it to an API
+    console.log(formData);
   };
 
   return (

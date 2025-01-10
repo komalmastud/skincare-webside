@@ -1,4 +1,4 @@
-/* Basic Navbar Styles */
+/* Default navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   display: flex;
   gap: 30px;
   position: absolute;
-  right: 300px; /* Move navbar-links towards the right */
+  right: 300px;
 }
 
 .navbar-links a {
@@ -39,12 +39,12 @@
 }
 
 .navbar-hamburger {
-  display: none; /* Hide by default */
+  display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
   position: absolute;
-  right: 20px; /* Hamburger button at right for desktop */
+  right: 20px;
   top: 18px;
 }
 
@@ -55,62 +55,98 @@
   border-radius: 5px;
 }
 
-/* Responsive Styles */
-
-/* Tablet and Large Screen (Laptop) */
-@media (max-width: 992px) {
+/* iPad Mini, iPad Air 4, iPad Pro 11, Galaxy Tab S7, Microsoft Surface Pro 7 (Tablet Devices) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar-links {
     flex-direction: row;
-    position: absolute;
-    top: 20px;
-    left: 150px; /* Move links slightly to the left */
-    right: auto;
+    display: flex;
+    justify-content: center; /* Centering the links */
+    gap: 20px;
+    position: static;
+    margin-left: 40px; /* Ensure no extra left margin */
+    margin-right: 100px; /* Ensure no extra right margin */
+  }
+
+  .navbar-logo h1 {
+    font-size: 22px;
   }
 
   .navbar-links a {
     font-size: 16px;
-    padding: 8px 12px;
-  }
-}
-
-/* Mobile (Small screens) */
-@media (max-width: 768px) {
-  .navbar-links {
-    flex-direction: column;
-    display: none; /* Hide links by default */
-    position: absolute;
-    top: 60px;
-    left: 220px;
-    right: auto;
-    background-color: white; /* Background for the mobile dropdown */
-    width: 100%;
-  }
-
-  .navbar-links.open {
-    display: flex; /* Show links when menu is open */
+    padding: 10px 15px;
   }
 
   .navbar-hamburger {
-    display: flex; /* Show hamburger button on mobile screens */
-    left: 300px; /* Move hamburger to the left */
-    top: 18px; /* Adjust vertical position */
-  }
-
-  .navbar-links a {
-    font-size: 16px;
-    padding: 12px 20px;
-    text-align: left; /* Align links to the left for mobile view */
+    display: none; /* Hide hamburger menu on these tablets */
   }
 }
 
-/* Very small mobile screens (extra small devices) */
-@media (max-width: 480px) {
+/* Mobile (Small Phones) */
+@media (max-width: 600px) {
   .navbar-logo h1 {
-    font-size: 20px; /* Smaller logo on very small screens */
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+    left: 300px;
+    top: 18px;
   }
 
   .navbar-links a {
     font-size: 14px;
-    padding: 10px 15px; /* Adjust padding for small screens */
+    padding: 12px 15px;
+    text-align: left;
+  }
+}
+
+/* Very Small Mobile Phones (Extra Small) */
+@media (max-width: 480px) {
+  .navbar-logo h1 {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+    left: 290px;
+    top: 18px;
+  }
+
+  .navbar-links a {
+    font-size: 12px;
+    padding: 10px 15px;
+    text-align: left;
   }
 }

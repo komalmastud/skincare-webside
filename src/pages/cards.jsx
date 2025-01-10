@@ -11,7 +11,6 @@ const HomePage = () => {
       </p>
 
       <div className="card-container">
-        {/* Dermatology Card */}
         <div className="card">
           <img src="path_to_dermatology_image.jpg" alt="Dermatology" />
           <h2>Dermatology</h2>

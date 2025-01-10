@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./faq.css"; // Import CSS for styling
+import "./faq.css";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
