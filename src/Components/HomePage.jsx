@@ -1,7 +1,7 @@
 import Card from "./cards";
-import Call from "./call";
-import Faq from "./faq";
-import Footer from "./footer";
+import Call from "../pages/call";
+import Faq from "../pages/faq";
+import Footer from "../pages/footer";
 import "./homepage.css";
 const HomePage = () => {
   return (

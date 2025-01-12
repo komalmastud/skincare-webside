@@ -60,11 +60,10 @@
   .navbar-links {
     flex-direction: row;
     display: flex;
-    justify-content: center; /* Centering the links */
+    justify-content: flex-start;
     gap: 20px;
     position: static;
-    margin-left: 40px; /* Ensure no extra left margin */
-    margin-right: 100px; /* Ensure no extra right margin */
+    margin-right: 120px;
   }
 
   .navbar-logo h1 {
@@ -74,10 +73,11 @@
   .navbar-links a {
     font-size: 16px;
     padding: 10px 15px;
+    margin-left: 10px;
   }
 
   .navbar-hamburger {
-    display: none; /* Hide hamburger menu on these tablets */
+    display: none;
   }
 }
 

@@ -1,7 +1,11 @@
+import Footer from "../pages/footer";
 const BlogPage = () => {
   return (
     <div>
-      <h1>Blog</h1>
+      <div>
+        <h1>Blog</h1>
+      </div>
+      <Footer />
     </div>
   );
 };

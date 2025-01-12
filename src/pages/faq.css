@@ -4,7 +4,8 @@
   margin: 0 auto;
   padding: 10px;
   font-family: Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 400px;
+  margin-left: 20px;
 }
 
 .faq-container h1 {
@@ -26,7 +27,7 @@
 .faq-question {
   font-size: 18px;
   cursor: pointer;
-  color: #007bff;
+  color: black;
   background: #f0f8ff;
   padding: 10px;
   border: 1px solid #ccc;
@@ -52,22 +53,22 @@
 /* iPhone 5, iPhone SE 2016 (320px to 374px) */
 @media (max-width: 374px) {
   .faq-container {
-    max-width: 300px; /* Narrower width */
+    max-width: 300px; 
     margin-top: 20px;
     padding: 5px;
   }
 
   .faq-container h1 {
-    font-size: 24px; /* Smaller title */
+    font-size: 24px; 
   }
 
   .faq-question {
-    font-size: 14px; /* Smaller text */
+    font-size: 14px;
     padding: 8px;
   }
 
   .faq-answer {
-    font-size: 14px; /* Smaller answer text */
+    font-size: 14px; 
     padding: 8px;
   }
 }
@@ -153,5 +154,26 @@
 
   .faq-answer {
     font-size: 18px;
+  }
+}
+
+/* MacBook Air, Lenovo i5 (1024px to 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .faq-container {
+    max-width: 550px; 
+    margin-top: -400px; 
+    padding: 15px; 
+  }
+
+  .faq-container h1 {
+    font-size: 34px; 
+  }
+
+  .faq-question {
+    font-size: 18px; 
+  }
+
+  .faq-answer {
+    font-size: 16px; 
   }
 }

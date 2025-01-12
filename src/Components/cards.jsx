@@ -1,5 +1,12 @@
-import "./cards.css";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./cards.css";
+
+// Import images from the assets folder
+import dermatologyImage from "../assets/card.jpg";
+import cosmetologyImage from "../assets/card1.jpg";
+import koreanSkinImage from "../assets/card2.jpg";
+import hairRemovalImage from "../assets/card4.jpg";
 
 const HomePage = () => {
   return (
@@ -12,7 +19,7 @@ const HomePage = () => {
 
       <div className="card-container">
         <div className="card">
-          <img src="path_to_dermatology_image.jpg" alt="Dermatology" />
+          <img src={dermatologyImage} alt="Dermatology" />
           <h2>Dermatology</h2>
           <p>
             Explore the best dermatological treatments for healthy, glowing
@@ -25,7 +32,7 @@ const HomePage = () => {
 
         {/* Cosmetology Card */}
         <div className="card">
-          <img src="path_to_cosmetology_image.jpg" alt="Cosmetology" />
+          <img src={cosmetologyImage} alt="Cosmetology" />
           <h2>Cosmetology</h2>
           <p>Enhance your beauty with the latest in cosmetic treatments.</p>
           <Link to="/cosmetology">
@@ -35,10 +42,7 @@ const HomePage = () => {
 
         {/* Korean Skin Treatment Card */}
         <div className="card">
-          <img
-            src="path_to_korean_skin_treatment_image.jpg"
-            alt="Korean Skin Treatment"
-          />
+          <img src={koreanSkinImage} alt="Korean Skin Treatment" />
           <h2>Korean Skin Treatment</h2>
           <p>
             Experience advanced Korean skincare treatments for radiant skin.
@@ -50,10 +54,7 @@ const HomePage = () => {
 
         {/* Permanent Hair Removal Card */}
         <div className="card">
-          <img
-            src="path_to_permanent_hair_removal_image.jpg"
-            alt="Permanent Hair Removal"
-          />
+          <img src={hairRemovalImage} alt="Permanent Hair Removal" />
           <h2>Permanent Hair Removal</h2>
           <p>
             Say goodbye to unwanted hair with advanced hair removal treatments.

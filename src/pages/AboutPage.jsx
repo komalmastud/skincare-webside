@@ -1,4 +1,5 @@
 import "./aboutUs.css";
+import Footer from "../pages/footer";
 
 const AboutUs = () => {
   return (
@@ -31,6 +32,7 @@ const AboutUs = () => {
         <li>Personalized Care</li>
         <li>Advanced Technology</li>
       </ul>
+      <Footer />
     </div>
   );
 };

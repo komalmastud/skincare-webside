@@ -35,7 +35,7 @@
 .card button {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgb(232, 78, 21);
   color: white;
   border: none;
   border-radius: 4px;
@@ -43,7 +43,7 @@
 }
 
 .card button:hover {
-  background-color: #0056b3;
+  background-color: rgb(232, 78, 21;
 }
 
 /* Devices: iPhone 11, iPhone XR, Galaxy Z Flip3, Galaxy S21 */
