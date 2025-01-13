@@ -16,19 +16,19 @@ const Navbar = () => {
       </div>
       <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMenuOpen(false)}>
-          Home
+          HOME
         </Link>
         <Link to="/about" onClick={() => setIsMenuOpen(false)}>
-          About
+          ABOUT
         </Link>
         <Link to="/services" onClick={() => setIsMenuOpen(false)}>
-          Services
+          SERVICES
         </Link>
         <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
-          Blog
+          BlOG
         </Link>
         <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-          Contact
+          CONTACT
         </Link>
       </div>
       <div className="navbar-hamburger" onClick={toggleMenu}>

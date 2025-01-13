@@ -4,16 +4,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import ContactUs from "../pages/ContactPage";
 import Slide1 from "../assets/beauty1.jpg";
 import Slide2 from "../assets/beauty2.jpg";
 import Slide3 from "../assets/beauty3.jpg";
 import Slide4 from "../assets/beauty4.jpg";
 import Slide5 from "../assets/beauty5.jpg";
-import { Link } from "react-router-dom";
+import Popup from "../Components/popup"; // Import your Popup component
 import "./swipper.css";
+import { useState } from "react";
 
 function Features() {
+  const [isPopupOpen, setPopupOpen] = useState(false); // State to control the popup visibility
+
+  const handlePopupToggle = (e) => {
+    e.preventDefault(); // Prevent default navigation behavior
+    setPopupOpen(!isPopupOpen); // Toggle the popup visibility
+  };
+
   return (
     <div className="features-container">
       <Swiper
@@ -41,12 +48,9 @@ function Features() {
                   rejuvenated, glowing complexion.
                 </p>
                 <div className="contact">
-                  <Link to="/contact" className="contact-box">
-                    <p>
-                      <strong>Book An Appointment</strong>
-                    </p>
-                    <ContactUs />
-                  </Link>
+                  <button onClick={handlePopupToggle} className="contact-box">
+                    <strong>Book An Appointment</strong>
+                  </button>
                   <div className="phone-number">
                     <p>📞 +91 93724 35228</p>
                   </div>
@@ -59,6 +63,11 @@ function Features() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Render the Popup */}
+      {isPopupOpen && (
+        <Popup isOpen={isPopupOpen} onClose={handlePopupToggle} />
+      )}
     </div>
   );
 }

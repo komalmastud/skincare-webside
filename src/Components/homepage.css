@@ -2,3 +2,91 @@
   margin-left: 50px;
   margin-right: 50px;
 }
+/* Section for Meet the Doctor */
+.meet-doctor-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 50px;
+}
+
+/* Container for the doctor image */
+.doctor-image-container {
+  flex: 1;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+/* Styling for the doctor image */
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Content section for text */
+.doctor-content {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Heading in the content section */
+.doctor-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styling in the content section */
+.doctor-content p {
+  margin-bottom: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .meet-doctor-section {
+    margin: 2rem 20px;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .doctor-image-container {
+    max-width: 500px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meet-doctor-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-image-container {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .doctor-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .doctor-content {
+    font-size: 0.9rem;
+  }
+
+  .doctor-image-container {
+    height: 250px;
+  }
+}

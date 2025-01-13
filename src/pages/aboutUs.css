@@ -1,4 +1,3 @@
-/* aboutUs.css */
 .about-us-container {
   padding: 30px;
   background-color: #f9f9f9;
@@ -42,4 +41,48 @@
   position: absolute;
   left: 0;
   color: #007bff;
+}
+
+/* Container for each section with image and text */
+.about-us-section {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-us-section {
+    flex-direction: column; /* Stack image and text on smaller screens */
+    text-align: center;
+  }
+
+  .about-us-image {
+    max-width: 100%;
+    margin-bottom: 1rem; /* Add space between image and text */
+  }
+
+  .about-us-text {
+    text-align: left; /* Optional: Align text to the left */
+  }
 }

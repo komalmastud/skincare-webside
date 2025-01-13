@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./cards.css";
+import "./Cards.css";
 
 // Import images from the assets folder
 import dermatologyImage from "../assets/card.jpg";
