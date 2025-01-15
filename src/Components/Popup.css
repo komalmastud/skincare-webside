@@ -51,13 +51,13 @@
 }
 
 .popup-container button {
-  background-color: #007bff;
+  background-color: rgb(232, 78, 21);
   color: white;
   cursor: pointer;
 }
 
 .popup-container button:hover {
-  background-color: #0056b3;
+  background-color: rgb(232, 78, 21);
 }
 
 .popup-container h2 {
