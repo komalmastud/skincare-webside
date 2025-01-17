@@ -1,14 +1,17 @@
+import Swiper from "../Components/swipper";
 import Card from "./cards";
 import HomeService from "../pages/homeservice";
 import Call from "../pages/call";
 import Faq from "../pages/faq";
 import Footer from "../pages/footer";
+import Popup from "../Components/popup";
 import Dr from "../assets/dr.jpg";
 import "./homepage.css";
 
 const HomePage = () => {
   return (
     <div>
+      <Swiper />
       <div className="home-page">
         <header>
           <h1>Welcome to Skinologyy</h1>
@@ -55,10 +58,12 @@ const HomePage = () => {
         </section>
 
         <section></section>
+
         <Card />
         <HomeService />
         <Call />
         <Faq />
+        <Popup />
         <Footer />
       </div>
     </div>

@@ -59,10 +59,10 @@
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align contact content to the left */
+  align-items: flex-start;
   position: absolute;
-  left: 1rem; /* Move the entire block to the left */
-  bottom: -11rem; /* Add some spacing from the bottom */
+  left: 1rem;
+  bottom: -11rem;
   z-index: 2;
 }
 

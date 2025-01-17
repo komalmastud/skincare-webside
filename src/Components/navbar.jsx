@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    // hamburger icon
     setIsMenuOpen(!isMenuOpen);
   };
 

@@ -9,16 +9,16 @@ import Slide2 from "../assets/beauty2.jpg";
 import Slide3 from "../assets/beauty3.jpg";
 import Slide4 from "../assets/beauty4.jpg";
 import Slide5 from "../assets/beauty5.jpg";
-import Popup from "../Components/popup"; // Import your Popup component
+import Popup from "../Components/popup"; // Ensure correct path
 import "./swipper.css";
 import { useState } from "react";
 
 function Features() {
-  const [isPopupOpen, setPopupOpen] = useState(false); // State to control the popup visibility
+  const [isPopupOpen, setPopupOpen] = useState(false);
 
   const handlePopupToggle = (e) => {
-    e.preventDefault(); // Prevent default navigation behavior
-    setPopupOpen(!isPopupOpen); // Toggle the popup visibility
+    e.preventDefault();
+    setPopupOpen(!isPopupOpen);
   };
 
   return (
@@ -64,9 +64,8 @@ function Features() {
         ))}
       </Swiper>
 
-      {/* Render the Popup */}
       {isPopupOpen && (
-        <Popup isOpen={isPopupOpen} onClose={handlePopupToggle} />
+        <Popup showModal={isPopupOpen} closeModal={handlePopupToggle} />
       )}
     </div>
   );

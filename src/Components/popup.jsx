@@ -1,98 +1,48 @@
-import React, { useState } from "react";
-import "./Popup.css"; // You can create a separate CSS file for styles.
+import React from "react";
+import "./Popup.css";
 
-const Popup = ({ isOpen, onClose }) => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    date: "",
-    time: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Send data to backend (API call)
-    fetch("/book-appointment", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert("Appointment Booked Successfully");
-        onClose(); // Close the popup after submission
-      })
-      .catch((error) => {
-        alert("Error booking appointment");
-      });
-  };
-
-  if (!isOpen) return null; // Return null if popup is not open
+const BookingModal = ({ showModal, closeModal }) => {
+  if (!showModal) return null;
 
   return (
-    <div className="popup-overlay">
-      <div className="popup-container">
-        <button className="close-btn" onClick={onClose}>
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <button className="close-btn" onClick={closeModal}>
           X
         </button>
         <h2>Book an Appointment</h2>
-        <form onSubmit={handleSubmit}>
-          <label>Name</label>
+        <form className="appointment-form">
+          <label htmlFor="name">Name:</label>
           <input
             type="text"
+            id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            placeholder="Enter your name"
             required
           />
 
-          <label>Email</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
+            id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            placeholder="Enter your email"
             required
           />
 
-          <label>Date</label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-            required
-          />
+          <label htmlFor="date">Date:</label>
+          <input type="date" id="date" name="date" required />
 
-          <label>Time</label>
-          <input
-            type="time"
-            name="time"
-            value={formData.time}
-            onChange={handleChange}
-            required
-          />
+          <label htmlFor="time">Time:</label>
+          <input type="time" id="time" name="time" required />
 
-          <label>Message</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
-
-          <button type="submit">Book Appointment</button>
+          <button type="submit" className="submit-btn">
+            Submit
+          </button>
         </form>
       </div>
     </div>
   );
 };
 
-export default Popup;
+export default BookingModal;

@@ -2,7 +2,6 @@ import React from "react";
 import "./services.css";
 import Footer from "../pages/footer";
 
-// Import images for services (replace with actual image paths)
 import ultrasonicImage from "../assets/ulltrasonic.jpg";
 import highFrequencyImage from "../assets/highfrequency.jpg";
 import galvanicImage from "../assets/galvanic.jpg";

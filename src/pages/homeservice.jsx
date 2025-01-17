@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // For navigation
+import { useNavigate } from "react-router-dom";
 import "./homeservice.css";
 
-// Import images for services (reuse the same images)
 import ultrasonicImage from "../assets/ulltrasonic.jpg";
 import highFrequencyImage from "../assets/highfrequency.jpg";
 import galvanicImage from "../assets/galvanic.jpg";
@@ -11,7 +10,6 @@ import microdermabrasionImage from "../assets/microdermabrasion.jpg";
 const HomeServices = () => {
   const navigate = useNavigate();
 
-  // Sample data: Display only the first 4 services
   const services = [
     {
       name: "Ultrasonic",
@@ -62,7 +60,7 @@ const HomeServices = () => {
 
       <button
         className="see-all-services-btn"
-        onClick={() => navigate("/services")} // Redirect to the ServicesPage
+        onClick={() => navigate("/services")}
       >
         See All Services
       </button>

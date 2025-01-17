@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/navbar";
-import Swipper from "./Components/swipper";
 
 import HomePage from "./Components/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -12,7 +11,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Swipper />
       <div className="content">
         <Routes>
           <Route path="/" element={<HomePage />} />
