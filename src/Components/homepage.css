@@ -1,6 +1,6 @@
 .home-page {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 /* Section for Meet the Doctor */
 .meet-doctor-section {
@@ -9,22 +9,22 @@
   align-items: center;
   gap: 2rem;
   margin: 2rem 50px;
+  margin-top: 100px;
 }
 
 /* Container for the doctor image */
 .doctor-image-container {
   flex: 1;
   max-width: 600px;
-  width: 100%;
-  height: auto;
-  max-height: 500px;
+  width: 150%;
+  height: 500px;
+  max-height: 900px;
 }
 
 /* Styling for the doctor image */
 .doctor-image {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }

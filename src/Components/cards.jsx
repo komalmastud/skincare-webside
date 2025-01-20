@@ -9,12 +9,14 @@ import hairRemovalImage from "../assets/card4.jpg";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome to Skinologyy</h1>
-      <p>
-        Your premier destination for advanced skincare and dermatological
-        solutions.
-      </p>
+    <>
+      <div className="card-title">
+        <h1>Welcome to Skinologyy</h1>
+        <p>
+          Your premier destination for advanced skincare and dermatological
+          solutions.
+        </p>
+      </div>
 
       <div className="card-container">
         <div className="card">
@@ -63,7 +65,7 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

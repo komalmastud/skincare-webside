@@ -13,17 +13,6 @@ const HomePage = () => {
     <div>
       <Swiper />
       <div className="home-page">
-        <header>
-          <h1>Welcome to Skinologyy</h1>
-          <p>
-            Welcome to Skinology, your premier destination for advanced skincare
-            and dermatological solutions. At Skinology, we are dedicated to
-            enhancing your natural beauty through personalized, science-based
-            treatments. Under the expert guidance of Dr. Shweta S. Vichare,
-            B.A.M.S. & F.A.M.C., our clinic offers a holistic approach to
-            skincare that caters to your unique needs and concerns.
-          </p>
-        </header>
         <section className="meet-doctor-section">
           <div className="doctor-image-container">
             <img
@@ -33,6 +22,15 @@ const HomePage = () => {
             />
           </div>
           <div className="doctor-content">
+            <header>
+              <h1>Welcome to Skinologyy</h1>
+              <p>
+                Welcome to Skinology, your premier destination for advanced
+                skincare and dermatological solutions. At Skinology, we are
+                dedicated to enhancing your natural beauty through personalized,
+                science-based treatments.
+              </p>
+            </header>
             <h2>Meet Dr. Shweta S. Vichare</h2>
             <p>
               Dr. Shweta S. Vichare is a Leading Cosmetologist, Dermatologist,

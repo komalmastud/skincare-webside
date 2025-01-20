@@ -1,4 +1,18 @@
 /* Default (Desktop & Laptop) */
+
+.card-title {
+  margin-left: 60px;
+  padding-top: 10px;
+}
+.card-title h1 {
+  margin-bottom: 5px;
+}
+
+.card-title p {
+  margin-top: 0;
+  margin-left: 2px;
+}
+
 .card-container {
   display: flex;
   gap: 20px;

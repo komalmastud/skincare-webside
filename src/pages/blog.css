@@ -35,7 +35,7 @@
 }
 
 .one-card-button {
-  background-color: #007bff;
+  background-color: orangered;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -45,5 +45,5 @@
 }
 
 .one-card-button:hover {
-  background-color: #0056b3;
+  background-color: orangered;
 }
