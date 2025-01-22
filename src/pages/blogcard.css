@@ -61,6 +61,36 @@
   color: #444;
 }
 
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .beauty-card-bottom {
+    flex-direction: column;
+  }
+
+  .beauty-card-images {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .beauty-card-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .beauty-card-title {
+    font-size: 1.6rem;
+  }
+
+  .beauty-card-content p {
+    font-size: 0.95rem;
+  }
+
+  .beauty-card-content h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile/Small devices breakpoint */
 @media (max-width: 768px) {
   .beauty-card-bottom {
     flex-direction: column;
@@ -73,5 +103,36 @@
 
   .beauty-card-content {
     width: 100%;
+  }
+
+  .beauty-card-title {
+    font-size: 1.4rem;
+  }
+
+  .beauty-card-content p {
+    font-size: 0.9rem;
+  }
+
+  .beauty-card-content h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices (portrait phones, 480px and smaller) */
+@media (max-width: 480px) {
+  .beauty-card-title {
+    font-size: 1.2rem;
+  }
+
+  .beauty-card-content p {
+    font-size: 0.85rem;
+  }
+
+  .beauty-card-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .beauty-card-bottom {
+    padding: 10px;
   }
 }
