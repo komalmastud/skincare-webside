@@ -147,3 +147,88 @@
     padding: 5px 10px;
   }
 }
+@media (min-width: 768px) and (max-width: 1194px) {
+  .card-container {
+    gap: 15px;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 250px; /* Larger card width for tablets */
+    padding: 20px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .card button {
+    padding: 10px 20px;
+  }
+}
+
+/* Larger Tablets and Surface Duo Portrait Mode */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .card-container {
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 300px; /* Increased width for larger screens */
+    padding: 25px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card button {
+    padding: 12px 24px;
+  }
+}
+
+/* Ultra-Large Screens (Optional for iPad Pro landscape or larger devices) */
+@media (min-width: 1400px) {
+  .card-container {
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 350px; /* Larger cards for ultra-wide screens */
+    padding: 30px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .card button {
+    padding: 15px 30px;
+  }
+}

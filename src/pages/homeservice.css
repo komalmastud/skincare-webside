@@ -109,3 +109,78 @@ button:hover {
     margin-bottom: 0.8rem;
   }
 }
+@media (min-width: 600px) and (max-width: 767px) {
+  .home-services-container {
+    gap: 0.8rem;
+  }
+
+  .home-service-card {
+    width: 220px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .service-card {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .service-content h2 {
+    font-size: 1rem;
+  }
+
+  .service-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra-Small Devices (Galaxy Fold, Foldable Phones in Portrait) */
+@media (max-width: 599px) {
+  .home-services-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .home-service-card {
+    width: 90%;
+    padding: 0.8rem;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .service-card {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.8rem;
+  }
+
+  .service-content h2 {
+    font-size: 1rem;
+  }
+
+  .service-content p {
+    font-size: 0.85rem;
+  }
+}
