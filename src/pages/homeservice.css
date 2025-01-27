@@ -96,19 +96,7 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .service-card {
-    flex-direction: column;
-    width: 100%;
-  }
 
-  .service-image {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 0.8rem;
-  }
-}
 @media (min-width: 600px) and (max-width: 767px) {
   .home-services-container {
     gap: 0.8rem;
@@ -182,5 +170,149 @@ button:hover {
 
   .service-content p {
     font-size: 0.85rem;
+  }
+}
+/* iPad Mini (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-services-container {
+    gap: 1rem;
+  }
+
+  .home-service-card {
+    width: 220px;
+  }
+
+  .services-container {
+    gap: 1rem;
+  }
+
+  .service-card {
+    width: 48%;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .service-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+  }
+
+  .service-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .service-content p {
+    font-size: 1rem;
+  }
+}
+
+/* iPad Air 4 and iPad Pro 11 (800px - 1280px) */
+@media (min-width: 800px) and (max-width: 1280px) {
+  .home-services-container {
+    gap: 1.2rem;
+  }
+
+  .home-service-card {
+    width: 240px;
+  }
+
+  .services-container {
+    gap: 1.2rem;
+  }
+
+  .service-card {
+    width: 46%;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .service-image {
+    width: 110px;
+    height: 110px;
+    margin-right: 1rem;
+  }
+
+  .service-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Galaxy Tab S7 (800px - 1280px) */
+@media (min-width: 800px) and (max-width: 1280px) {
+  .home-services-container {
+    gap: 1rem;
+  }
+
+  .home-service-card {
+    width: 250px;
+  }
+
+  .services-container {
+    gap: 1rem;
+  }
+
+  .service-card {
+    width: 45%;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .service-image {
+    width: 120px;
+    height: 120px;
+    margin-right: 1.2rem;
+  }
+
+  .service-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .service-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* General Mobile-Focused Adjustments (600px - 799px) */
+@media (max-width: 799px) {
+  .home-services-container {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .home-service-card {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .service-card {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.8rem;
+  }
+
+  .service-content h2 {
+    font-size: 1rem;
+  }
+
+  .service-content p {
+    font-size: 0.9rem;
   }
 }
